@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificate of Completion</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: 'Georgia', 'Times New Roman', serif;
+    }
+    .certificate {
+      width: 900px;
+      max-width: 95%;
+      background: #fffdf7;
+      padding: 50px;
+      border-radius: 18px;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+    }
+    .certificate::before {
+      content: "";
+      position: absolute;
+      inset: 14px;
+      border-radius: 14px;
+      border: 3px solid #c9a24d;
+      pointer-events: none;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 42px;
+      letter-spacing: 2px;
+      color: #1b2a41;
+    }
+    .header h3 {
+      margin: 10px 0 0;
+      font-weight: normal;
+      color: #555;
+    }
+    .divider {
+      width: 180px;
+      height: 4px;
+      background: linear-gradient(to right, #c9a24d, #f2d16b, #c9a24d);
+      margin: 18px auto 0;
+      border-radius: 4px;
+    }
+    .content {
+      text-align: center;
+      margin-top: 40px;
+      color: #333;
+    }
+    .content p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin: 14px 0;
+    }
+    .name {
+      font-size: 36px;
+      font-weight: bold;
+      color: #0b5ed7;
+      margin: 18px 0;
+    }
+    .course {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1b2a41;
+    }
+    .footer {
+      margin-top: 55px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+    }
+    .sign {
+      text-align: center;
+      width: 220px;
+    }
+    .sign hr {
+      border: none;
+      border-top: 2px solid #333;
+      margin-bottom: 8px;
+    }
+    .seal {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: radial-gradient(circle at top, #f5e08e, #c9a24d);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #5a4300;
+      box-shadow: inset 0 0 10px rgba(255,255,255,0.6), 0 8px 20px rgba(0,0,0,0.25);
+    }
+    .seal span {
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    @media print {
+      body { background: none; }
+      .certificate { box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="certificate">
+    <div class="header">
+      <h1>CERTIFICATE OF COMPLETION</h1>
+      <h3>This certificate is proudly presented to</h3>
+      <div class="divider"></div>
+    </div>
+
+    <div class="content">
+      <div class="name">Jatin Sharma</div>
+      <p>for successfully completing the</p>
+      <div class="course">Web Development (HTML)</div>
+      <p>
+        This project demonstrates creativity, technical skill, and a strong
+        understanding of HTML concepts including structure, styling, and
+        responsive design.
+      </p>
+      <p><strong>Date:</strong> 22 / 12 / 25</p>
+    </div>
+
+    <div class="footer">
+      <div class="sign">
+        <hr />
+        <div>Mr. Nitin Sir</div>
+      </div>
+
+      <div class="seal">
+        <span>WEB<br/>DEV<br/>CERTIFIED</span>
+      </div>
+
+      <div class="sign">
+        <hr />
+        <div>Signature</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
