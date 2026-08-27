@@ -1,6 +1,7 @@
 <html>
 <head>
-    <title>Khatu Shyam Temple - Home</title>
+    <!-- Combined your two titles into the main head section -->
+    <title>Khatu Shyam Temple - Home | Darshan, Stay, Cab & Yatra Services</title>
 </head>
 <body bgcolor="lightyellow" text="green">
 
@@ -9,9 +10,6 @@
     <tr>
         <td>
             <img src="logo.png" width="150" height="80" align="left">
-             <head>
-             <title>Khatushyam Baba Darbar — Darshan, Stay, Cab & Yatra Services</title>
-             </head>
         </td>
         <td align="center">
             <marquee behavior="scroll" direction="left" scrollamount="10">
@@ -47,10 +45,15 @@
     For more details, visit our <a href="services.html"><b><font color="blue">services</font></b></a>.
 </p>
 
-<!-- Images Section -->
+<!-- Images Section with onmouseover events -->
 <p align="center">
-<img src="map.jpeg" width="400" height="400" border="5" bordercolor="green" style="margin:10px;">
-<img src="KhatuShyamJi.png" width="400" height="400" border="5" bordercolor="green" style="margin:10px;">
+<img src="map.jpeg" width="400" height="400" border="5" bordercolor="green" style="margin:10px; cursor:pointer;" 
+     onmouseover="this.style.borderColor='orange';" 
+     onmouseout="this.style.borderColor='green';">
+     
+<img src="KhatuShyamJi.png" width="400" height="400" border="5" bordercolor="green" style="margin:10px; cursor:pointer;" 
+     onmouseover="this.style.borderColor='orange';" 
+     onmouseout="this.style.borderColor='green';">
 </p>
 
 <!-- Contact Form -->
@@ -76,7 +79,11 @@
         </tr>
         <tr align="center">
             <td colspan="2">
-                <input type="submit" value="Send Message" style="background:yellow; color:green; font-weight:bold;">
+                <!-- Submit button with onmouseover events -->
+                <input type="submit" value="Send Message" 
+                       style="background:yellow; color:green; font-weight:bold; padding: 5px 15px; cursor: pointer;" 
+                       onmouseover="this.style.background='orange'; this.style.color='white';" 
+                       onmouseout="this.style.background='yellow'; this.style.color='green';">
             </td>
         </tr>
     </form>
